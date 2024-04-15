@@ -1,0 +1,29 @@
+{
+  "name": "my-npm-package",
+  "version": "1.0.0",
+  "description": "A simple example NPM package",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "rollup -c",
+    "rename": "node ./rename.js",
+    "pushinto": "node ./pushinto.js",
+    "new": "node ./new.js",
+    "help": "node ./help.js",
+    "postinstall": "node ./help.js"
+  },
+  "bin": {
+    "rename": "./rename.js",
+    "pushinto": "./pushinto.js",
+    "new": "./new.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.60.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
